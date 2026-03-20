@@ -13,7 +13,7 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install pyinstaller
-      - run: pyinstaller --onefile --name DartCounter "Dart points counter.py"
+      - run: pyinstaller --onefile --name DartCounter Darts_main.py
       - uses: actions/upload-artifact@v3
         with:
           name: DartCounter.exe
